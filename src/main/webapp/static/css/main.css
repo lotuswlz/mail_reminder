@@ -1,0 +1,51 @@
+body {
+	margin: 3 3 3 3 ;
+}
+ h1 {
+ 	background-color:#D9C075;
+	font-size:18px;
+	font-weight:bold;
+	color: white;
+	line-height:36px;
+	padding-left:5px;
+ }
+ hr {
+	color:#C0C0C0;
+	border-width:1px;
+	border-collapse:collapse;
+	border-style:dotted;
+ }
+ ul {
+	margin-left:0px;
+	margin-top:0px;
+	float:left;
+	padding:0px;
+	width:100%;
+ }
+ ul li {
+	font-size:16px;
+	padding-left: 5px;
+	padding-right: 6px;
+	line-height:30px;
+	float: left;
+ }
+ 
+ li.odd {
+	background-color: #F2F2F2;
+ }
+
+ li.even {
+	background-color: white;
+ }
+
+ a {
+	text-decoration:none;
+	color:black;
+ }
+ a:hover {
+	text-decoration:underline;
+	color:black;
+ }
+ a:visited {
+	color:black;
+ }

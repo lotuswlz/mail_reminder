@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="cw-default" extends="struts-default">
+
+		
+		<global-results>
+			<result name="exception">/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="exception" />
+		</global-exception-mappings>
+
+
+		<!-- A wildcard action at the end of the configuration can be used to 
+			catch unmatched references.
+			
+			It's important to put a "catchall" wildcard mapping like this at 
+			the end of your configuration so it won't attempt to map every 
+			request! 
+			
+			http://struts.apache.org/2.x/docs/action-configuration.html -->
+		<!--
+			<action name="*">
+			<result>/{1}.jsp</result>
+			</action>
+		-->
+
+	</package>
+
+	<include file="action-test.xml" />
+</struts>
